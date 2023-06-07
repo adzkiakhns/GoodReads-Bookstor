@@ -1,25 +1,20 @@
-import logo from './logo.svg';
+import React, {Fragment} from "react";
 import './App.css';
+
+//components
+
+import InputBook from "./components/InputBook";
+import ListBooks from "./components/ListBook";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  <Fragment>
+    <div className="container">
+      <InputBook />
+      <ListBooks />
     </div>
-  );
+  </Fragment>
+  )
 }
 
 export default App;
